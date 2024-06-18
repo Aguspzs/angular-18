@@ -1,0 +1,15 @@
+<h1>User</h1>
+
+@if ( user() ){
+  <section>
+    <div>
+      <img
+        [srcset]="user().avatar"
+        [alt]="user().first_name"
+      >
+    </div>
+  </section>
+
+} @else {
+  <p>Cargando información</p>
+}
